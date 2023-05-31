@@ -11,6 +11,12 @@ module.exports = {
     debug: true
   },
 
+  test: {
+    client: 'postgresql',
+    connection: 'postgres://localhost/stream-library',
+    debug: true
+  },
+
   staging: {
     client: 'postgresql',
     connection: {

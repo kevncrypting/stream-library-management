@@ -7,6 +7,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var librariesRouter = require('./routes/libraries');
 var shelvesRouter = require('./routes/shelves');
+var booksRouter = require('./routes/books');
 
 var app = express();
 
@@ -20,5 +21,6 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/libraries', librariesRouter);
 app.use('/shelves', shelvesRouter);
+app.use('/books', booksRouter);
 
 module.exports = app;
